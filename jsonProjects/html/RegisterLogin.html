@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styleThree.css">
+</head>
+<body>
+    
+    <div class="form-container" id="registerform">
+        <h2>Register</h2>
+        <form id="register">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" placeholder="Enter your first name" required>
+            
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" placeholder="Enter your last name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <p>Already have an account? <a id="switchToLogin">Login</a></p>
+        <div class="message" id="registerMessage"></div>
+    </div>
+
+    <div class="form-container active" id="loginform">
+        <h2>Login</h2>
+        <form id="login">
+            <label for="emailreg">Email:</label>
+            <input type="email" id="emailreg" placeholder="Enter your email" required>
+            
+            <label for="passwordreg">Password:</label>
+            <input type="password" id="passwordreg" placeholder="Enter your password" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <p>Don't have an account? <a id="switchToRegister">Register Now</a></p>
+        <div class="message" id="loginMessage"></div>
+    </div>
+
+    <script src="../js/scriptThree.js"></script>
+
+</body>
+</html>

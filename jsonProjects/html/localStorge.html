@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styleOne.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Personal Data</h1>
+        <form action="" id="f1" class="f1">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="age">Age</label>
+            <input type="text" id="age" placeholder="Enter your age">
+
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" placeholder="Enter your gender">
+
+            <label for="brief">Brief Description</label>
+            <input type="text" id="brief" placeholder="A short bio about yourself">
+
+            <label for="major">Major</label>
+            <input type="text" id="major" placeholder="Your field of study">
+
+            <div class="language-row">
+                <label for="languages">Languages</label>
+                <div class="language-checkboxes">
+                    <input type="checkbox" id="php" name="php" value="PHP">
+                    <label for="php">PHP</label>
+
+                    <input type="checkbox" id="c++" name="c++" value="C++">
+                    <label for="c++">C++</label>
+
+                    <input type="checkbox" id="js" name="js" value="JS">
+                    <label for="js">JS</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="f2" class="f2 result-card">
+            <p>Name: <span id="a1"></span></p>
+            <p>Age: <span id="a2"></span></p>
+            <p>Gender: <span id="a3"></span></p>
+            <p>Brief Description: <span id="a4"></span></p>
+            <p>Major: <span id="a5"></span></p>
+            <p>Loved Languages: 
+                <span id="a6"></span>
+                <span id="a7"></span>
+                <span id="a8"></span>
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/scriptOne.js"></script>
+</body>
+</html>
